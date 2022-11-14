@@ -2,20 +2,13 @@ const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
 const messagen = document.getElementById("messagen");
-var teste = 0;
+
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   checkInputs();
  
 });
-
-function finalizar(){
-  if (teste === 1){
-    document.getElementById('form').submit();
-  }
-  
-}
 
 function checkInputs() {
   const usernameValue = username.value;
@@ -40,7 +33,6 @@ function checkInputs() {
     setErrorFor(messagen, "Digite uma Mensagem.");
   } else {
     setSuccessFor(messagen);
-    teste=teste+1;
   }
   
 }
