@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
-
 * {
     padding: 0;
     margin: 0;
@@ -109,22 +108,23 @@ main form{
 .checkbox input:checked + label:before{
     background: url('/img/check.svg') no-repeat center;   
 }
-form button {
+main button {   
     height: 55px;
-    background: none;
-    border: auto;
-    border-radius: 15px;
+    width: 100%;
     color:#def7f4;
-    outline: none;
     cursor: pointer;
-    font-size: 30px;
+    background: none;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: bold;   
 }
 .content footer{
-    margin: auto;
-    width: 85%;
+    width: 100%;
+    height: 20%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 20%;
+    align-items: center;    
     border-bottom: 2px solid #def7f478;
+    margin-top: 80px;
 }
