@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+    font-family: 'Inter',sans-serif; 
+    color: #ff8c00;   
+}
+body, html {    
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(72deg, #ff8c00,#8a42ff ,#0f0); 
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    min-height: 440px;
+    max-height: 500px;
+}
+.content img{
+    height: 150px;
+    width: 200px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+}
+header h1 {
+    font-weight: bold;
+    color: #f0fbaf;
+    font-size: 64px;
+    margin-left: 25px;
+    
+}
+main{
+    margin: auto;
+    width: 85%;
+    height: 70%;
+}
+main form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 55px;
+    border: 2px solid #def7f4;
+    flex-direction: row-reverse;
+}
+.input-field input {
+    border: none;
+    outline: none;
+    background: #def7f4;
+    width: 85%;
+    height: 55px;
+    padding-left: 20px;
+    font-size: 20px;
+    border-radius: 0 8px 8px 0;
+}
+::-webkit-input-placeholder{
+    color: brown;
+    font-weight: 300;
+}
+.input-field label {
+    height: 55px;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-field label img {
+    width: 33px;
+    height: 33px;
+    color: #def7f4;
+}
+.checkbox label {
+    color:#def7f4;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.checkbox input {
+    display: none;
+}
+.checkbox input + label:before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    border: 2px solid #def7f4;
+    border-radius: 5px;
+    margin-right: 10px;    
+}
+.checkbox input:checked + label:before{
+    background: url('/img/check.svg') no-repeat center;   
+}
+form button {
+    height: 55px;
+    background: none;
+    border: auto;
+    border-radius: 15px;
+    color:#def7f4;
+    outline: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+.content footer{
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    border-bottom: 2px solid #def7f478;
+}
