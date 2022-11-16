@@ -1,11 +1,11 @@
 var btnLogin = document.getElementById('btnLogin');
-var email = document.getElementById('email');
-var password = document.getElementById('password');
+var inputemail = document.getElementById('inputemail');
+var inputpassword = document.getElementById('inputpassword');
 
 btnLogin.addEventListener('click',function(){
     
-firebase.auth().signInWithEmailAndPassword(email.value, password.value).then(function(result) {
-        alert("Usuário Conectado!");
+firebase.auth().signInWithEmailAndPassword(inputemail.value, inputpassword.value).then(function (result) {
+       // alert("Usuário Conectado!");
         window.location.replace('index.html')
    
   }).catch(function(error) {
